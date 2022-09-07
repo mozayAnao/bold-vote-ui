@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const NavWrapper = styled.nav`
   width: 100%;
+  padding: 0 250px;
   min-height: 100px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -26,7 +27,7 @@ export const NavWrapper = styled.nav`
     width: 100%;
     padding: 0 50px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 
     & .actors {

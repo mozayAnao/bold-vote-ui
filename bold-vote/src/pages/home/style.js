@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const HomeWrapper = styled.div`
-    width: 100%;
-    min-height: 90vh;
+  width: 100%;
+  min-height: 92vh;
 `;
