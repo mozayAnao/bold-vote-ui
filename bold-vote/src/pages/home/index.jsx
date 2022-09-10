@@ -1,4 +1,5 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 import { Button } from "../../components/button";
 import { Input } from "../../components/input";
 import { Navbar } from "../../components/navbar";
@@ -8,8 +9,10 @@ import { TopSection } from "./topSection";
 const Home = () => {
   return (
     <HomeWrapper>
-      <Navbar />
-      <TopSection />
+      <Container>
+        <Navbar />
+        <TopSection />
+      </Container>
     </HomeWrapper>
   );
 };

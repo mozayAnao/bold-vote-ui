@@ -26,9 +26,11 @@ export const Navbar = () => {
         </div>
         <div className="action">
           <div className="actors">
-            <Link to="/sign-in">Sign In</Link>
+            <Link to="/access/signin">Sign In</Link>
           </div>
-          <Button>Sign Up</Button>
+          <Button onClick={() => (window.location.href = "/access/signup")}>
+            Sign Up
+          </Button>
         </div>
       </NavWrapper>
     </Container>

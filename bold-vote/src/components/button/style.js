@@ -1,12 +1,13 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ButtonWrapper = styled.button`
   width: auto;
   padding: 16px;
+  margin: 10px 0;
   border: none;
   border-radius: 10px;
-  background: ${({ bgcolor }) => (bgcolor ? bgcolor : 'var(--primary-color)')};
-  color: ${({ color }) => (color ? color : '#fff')};
+  background: ${({ bgcolor }) => (bgcolor ? bgcolor : "var(--primary-color)")};
+  color: ${({ color }) => (color ? color : "#fff")};
   font-size: 16px;
   font-weight: 600;
 
