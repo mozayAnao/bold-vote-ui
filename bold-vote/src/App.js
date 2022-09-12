@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./pages/home";
 import { Routes, Route } from "react-router-dom";
 import { AccessPage } from "./pages/accessPages";
+import { Dashboard } from "./pages/dashboard";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Route path="/">
         <Route path="" element={<Home />} />
         <Route path="access/:action" element={<AccessPage />} />
+        <Route path="dashboard/:role" element={<Dashboard />} />
       </Route>
     </Routes>
   );

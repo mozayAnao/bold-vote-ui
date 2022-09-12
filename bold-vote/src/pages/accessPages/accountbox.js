@@ -39,7 +39,7 @@ export const AccountBox = (props) => {
           </div>
 
           <div className="illustration">
-            <BrandLogo />
+            <BrandLogo color="#fff" />
             <img src={Illustration} alt="Access page" />
           </div>
         </div>

@@ -6,9 +6,6 @@ import { Button } from "../../components/button";
 export const TopSection = () => {
   return (
     <TopSectionWrapper>
-      <div className="illustration">
-        <img src={Illustration} alt="Bold Vote" />
-      </div>
       <div className="heroText">
         <h4>Transparent Elections</h4>
         <h1>E-Voting System</h1>
@@ -19,6 +16,9 @@ export const TopSection = () => {
           scrambled it to make a type specimen book.
         </p>
         <Button>Try it out</Button>
+      </div>
+      <div className="illustration">
+        <img src={Illustration} alt="Bold Vote" />
       </div>
     </TopSectionWrapper>
   );

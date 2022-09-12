@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ButtonWrapper = styled.button`
-  width: auto;
+  width: ${({ width }) => (width ? width : "auto")};
   padding: 16px;
   margin: 10px 0;
   border: none;
@@ -18,5 +18,6 @@ export const ButtonWrapper = styled.button`
   &:hover {
     cursor: pointer;
     background: var(--secondary-color);
+    color: #fff;
   }
 `;

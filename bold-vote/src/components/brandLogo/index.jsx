@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import LogoImg from "../../images/logos/boldtechlogo2.png";
+import LogoImg from "../../images/logos/boldtechlogo3.png";
 import { useMediaQuery } from "react-responsive";
 import { deviceSize } from "../responsive";
 import { BrandLogoContainer, LogoImage, LogoTitle, StyledLink } from "./style";
