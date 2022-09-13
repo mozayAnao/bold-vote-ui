@@ -11,6 +11,7 @@ import "@trendmicro/react-sidenav/dist/react-sidenav.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChartBar, faHome } from "@fortawesome/free-solid-svg-icons";
 import { BrandLogo } from "../../components/brandLogo";
+// import { SideBar } from "../../components/sideBar/index.jsx";
 
 export const Dashboard = () => {
   return (
@@ -25,7 +26,7 @@ export const Dashboard = () => {
           <NavItem eventKey="home">
             <NavIcon>
               <FontAwesomeIcon icon={faHome} />
-              {/* <i className="fa fa-fw fa-home" style={{ fontSize: "1.75em" }} /> */}
+              <i className="fa fa-fw fa-home" style={{ fontSize: "1.75em" }} />
             </NavIcon>
             <NavText>Home</NavText>
           </NavItem>
@@ -48,6 +49,7 @@ export const Dashboard = () => {
         </SideNav.Nav>
       </SideNav>
       <main className="main">Home</main>
+      {/* <SideBar /> */}
     </DashboardWrapper>
   );
 };
