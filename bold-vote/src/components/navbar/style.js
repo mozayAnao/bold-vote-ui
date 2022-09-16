@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const NavWrapper = styled.nav`
   width: 100%;
-  padding: 0 350px;
   min-height: 100px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -13,6 +12,10 @@ export const NavWrapper = styled.nav`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    & a {
+      text-decoration: none;
+    }
 
     & .item {
       width: auto;
@@ -29,6 +32,10 @@ export const NavWrapper = styled.nav`
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    & a {
+      text-decoration: none;
+    }
 
     & .actors {
       width: auto;

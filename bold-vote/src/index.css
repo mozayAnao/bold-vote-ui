@@ -8,7 +8,13 @@
   --faded-primary: #34acee;
   --info-text-color: #54595f;
 }
+
 a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+link {
   text-decoration: none;
   color: var(--primary-color);
 }
@@ -26,4 +32,13 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.main-expanded {
+  margin-left: 240px;
+}
+
+.selected {
+  background: var(--secondary-color);
+  color: #ffffff;
 }
