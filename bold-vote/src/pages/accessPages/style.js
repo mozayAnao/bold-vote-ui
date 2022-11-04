@@ -33,7 +33,7 @@ export const AccessPageWrapper = styled.div`
 
     & .illustration {
       width: 70%;
-      height: 91.5vh;
+      height: 100vh;
       padding: 30px;
       display: flex;
       flex-direction: column;
@@ -69,6 +69,7 @@ export const FormWrapper = styled.div`
       text-align: center;
       font-size: 11px;
       color: var(--info-text-color);
+      margin-bottom: 0px;
     }
   }
 `;
@@ -76,5 +77,5 @@ export const FormWrapper = styled.div`
 export const Line = styled.div`
   width: ${({ width }) => (width ? width + "px" : "30%")};
   height: 0px;
-  border: 0.5px solid var(--primary-color);
+  border: 0.5px solid var(--secondary-color);
 `;

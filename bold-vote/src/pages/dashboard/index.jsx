@@ -1,53 +1,27 @@
-import React from "react";
-import { DashboardWrapper } from "./style";
-import SideNav, {
-  Toogle,
-  Nav,
-  NavItem,
-  NavIcon,
-  NavText,
-} from "@trendmicro/react-sidenav";
-import "@trendmicro/react-sidenav/dist/react-sidenav.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChartBar, faHome } from "@fortawesome/free-solid-svg-icons";
-import { BrandLogo } from "../../components/brandLogo";
+import React from 'react';
+import { DashboardWrapper } from './style';
+import { BrandLogo } from '../../components/brandLogo';
+import { Line } from '../accessPages/style';
+import { Marginer } from '../../components/marginer';
+import { Navbar } from '../../components/navbar';
+import { SideNav } from './sideNav';
+import { Dashboards } from './dashboard';
 
 export const Dashboard = () => {
   return (
     <DashboardWrapper>
-      <SideNav
-        onSelect={(selected) => {
-          console.log(selected);
-        }}
-      >
-        <SideNav.Toggle />
-        <SideNav.Nav defaultSelected="home">
-          <NavItem eventKey="home">
-            <NavIcon>
-              <FontAwesomeIcon icon={faHome} />
-              {/* <i className="fa fa-fw fa-home" style={{ fontSize: "1.75em" }} /> */}
-            </NavIcon>
-            <NavText>Home</NavText>
-          </NavItem>
-          <NavItem eventKey="charts">
-            <NavIcon>
-              <FontAwesomeIcon icon={faChartBar} />
-              <i
-                className="fa fa-fw fa-line-chart"
-                style={{ fontSize: "1.75em" }}
-              />
-            </NavIcon>
-            <NavText>Charts</NavText>
-            <NavItem eventKey="charts/linechart">
-              <NavText>Line Chart</NavText>
-            </NavItem>
-            <NavItem eventKey="charts/barchart">
-              <NavText>Bar Chart</NavText>
-            </NavItem>
-          </NavItem>
-        </SideNav.Nav>
-      </SideNav>
-      <main className="main">Home</main>
+      <div className="sidebar">
+        <BrandLogo textSize={25} logoSize={4} />
+        <Marginer direction="vertical" margin={10} />
+        <Line width="100%" />
+        <Marginer direction="vertical" margin={10} />
+
+        <SideNav />
+      </div>
+      <main className="main">
+        <Navbar />
+        <Dashboards />
+      </main>
     </DashboardWrapper>
   );
 };

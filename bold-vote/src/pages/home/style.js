@@ -8,7 +8,6 @@ export const HomeWrapper = styled.div`
 export const TopSectionWrapper = styled.div`
   width: 100%;
   min-height: 70vh;
-  padding: 0 350px;
 
   display: flex;
   justify-content: space-between;
